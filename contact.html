@@ -9,8 +9,7 @@
         overflow-x: hidden;
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background-color: whitesmoke;
-        color: #3e005d;
+        background-color: rgba(221, 216, 216, 0.74);
     }
     .navbar{
 
@@ -56,18 +55,11 @@ border: 1px solid;
 }
 input[type=text]{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            border-color: darkgrey;
+            justify-content: center;
             outline: darkgrey;
+            margin: auto;
 }
-#box{
-    background-color: white;
-    border: 1px solid purple;
-    border-radius: 20px;
-    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
-    width: 600px;
-    margin-left: 350px;
 
-}
 #link{
     text-decoration: none;font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -91,6 +83,97 @@ input[type=text]{
     font-size: x-large;
     border-radius: 40px;
 }
+#box{
+    margin: auto;
+    width: 610px;
+    border: 1px solid white;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+}
+#contact{
+    justify-content: center;
+    margin: auto;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fullname{
+    height: 40px;
+    background-color: rgba(221, 216, 216, 0.74);
+    border: none;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+}
+#title{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: right;
+}
+#email{
+    height: 40px;
+    background-color: rgba(221, 216, 216, 0.74);
+    border: none;
+    border-radius: 10px;
+    width: 600px;
+    float: left;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+}
+#number{
+    height: 40px;
+    background-color: rgba(221, 216, 216, 0.74);
+    border: none;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+}
+#title1{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: right;
+}
+.sol{
+    display: flex;
+    flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+    
+}
+input {
+            text-align: center; /* Center the text inside the input box */
+            margin: 5px;
+        }
+#option{
+    justify-content: center;
+    text-align: center;
+}
+#opt{
+    height: 40px;
+    background-color: rgba(221, 216, 216, 0.74);
+    border: none;
+    border-radius: 10px;
+    width: 610px;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 2s;
+    font-size: medium;
+    font-style: italic;
+}
+select option {
+            /* Style the options inside the dropdown */
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+        }
+
     </style>
 </head>
 <body>
@@ -105,8 +188,13 @@ input[type=text]{
         </nav>
         </div>
         <br><br>
-        <div id="methods">hello</div>
-        
-
+        <div id="box"><br><div id="contact">Contact Us</div><br><div id="title">Enter Name:</div><div><input type="text" name="name" id="fullname" required></div><br><div id="title">Enter Email:</div><div class="sol"><div><input type="email" name="name" id="email" required></div></div><br><span id="title1">Enter Phone Number:</span><br><div class="sol"><span><input type="number" name="name" id="number" required></span></div><br><div id="title">Choose your Inquiry:</div><select id="opt" name="dropdown">
+            <option value="option">Product Information</option>
+            <option value="option">Order and Shipping Details</option>
+            <option value="option">Payment and Pricing</option>
+            <option value="option">Returns and Refunds</option>
+            <option value="option">Account and Login</option>
+            <option value="option">Customer Support</option>
+        </select>
 </body>
 </html>
