@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNexa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+
+border: 1px solid;
+position: sticky;
+top: 0.3px;
+height: 70px;
+border: 2px solid white;
+background-color: white;
+border-radius: 10px;
+display: block;
+justify-content: center;
+overflow: hidden;
+}
+.navbar ul{
+overflow: auto;
+}
+.navbar li{
+float: left;
+list-style: none;
+padding: 10px 80px;
+color: orange;
+height: 30px;
+overflow: hidden;
+
+}
+.navbar li a{
+text-decoration: none;
+color: rgb(14, 9, 1);
+font-size: 18px;
+font-family: 'Chakra Petch', sans-serif;
+font-weight: 400;
+transition: all 0.3s ease-in-out;
+overflow: hidden;
+}
+.navbar li a:hover{
+    color: rgb(5, 134, 247);
+}
+.search{
+float: right;
+padding:0px 31px;
+border-color: gray;
+}
+.navbar input{
+border-radius: 20px;
+border: 1px solid;
+}
+input[type=text]{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-color: darkgrey;
+            outline: darkgrey;
+}
+.flex{
+    border: none;
+    display: inline-table;
+    width: 200px;
+    height: 290px;
+    display: inline-flexbox;
+    margin-left: 29px;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+    transition: all 0.3s ease-in-out .3s;
+}
+.flex:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+#photo1{
+    background-image: url('vegetables-2008578_640.png');
+    background-repeat: no-repeat;
+    background-size: 230px;
+}
+#value{
+    margin-top: 230px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#price{
+    color: blueviolet;
+    font-size: 14px;
+    font-weight: 900;
+}
+#btn1{
+    margin-left: 64px;
+    border: none;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+#btn1:hover{
+    background-color: gray;
+    color: beige;
+}
+#image{
+    width: 600px;
+    margin-left: 350px;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    border: 2px ridge darkslateblue;
+    border-radius: 10px;
+    /*transition: all 1s ease-in-out;
+
+#image:hover{
+    transform: rotate(360deg);
+}*/
+}
+#home{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    animation-name: trend;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    transition: all ease-in-out 1s;
+}
+#photo2{
+    background-image: url('backpack-152705_640.png');
+    background-repeat: no-repeat;
+    background-size: 230px;
+
+}
+#photo3{
+    background-image: url('kontroller-2022084_640.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220px;
+
+}
+#photo4{
+    background-image: url('table-lamp-7871088_640.jpg');
+    background-repeat: no-repeat;
+    background-size: 230px;
+
+}
+#photo5{
+    background-image: url('lcd-2059995_640.png');
+    background-repeat: no-repeat;
+    background-size: 210px;
+    background-position: center;
+
+}
+#btun{
+    height: 40px;
+    width: 90px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin-left: 620px;
+    
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+#btun:hover{
+    background-color: gray;
+    color: whitesmoke;
+}
+@media (max-width: 200px){
+    #box1{
+        display: none;
+    }
+}
+/*@keyframes trend {
+    from{
+color: yellow;
+
+    }
+    to{
+color: red;
+
+    }
+    
+}*/
+</style>
+<body>
+    <div class="navbar" id="box1"> 
+        <nav class="navbar">
+          <ul>
+            <li><a href="Hub.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="search"><input type="text" name="search" id="search" placeholder="Search" style="padding: 10px;"></div>
+          </ul>
+        </nav>
+        </div>
+        <br><br>
+        <img src="Shop NExa.png" alt="Welcome to ShopNexa" id="image">
+        <br><br><br><br>
+    <h2 id="home">Trending</h2>
+    <hr>
+    <br>
+    
+    <para class="flex" id="photo1"><div id="value">Vegetable Bowl<br><span id="price">Rs.1,500</span><br><br><input type="submit" id="btn1" value="Buy Now"></div></para>
+    <para class="flex" id="photo2"><div id="value">Travelling Backpack<br><span id="price">Rs.3,999</span><br><br><input type="submit" id="btn1" value="Buy Now"></div></para>
+    <para class="flex" id="photo3"><div id="value">PS4 Controller<br><span id="price">Rs.4,990</span><br><br><input type="submit" id="btn1" value="Buy Now"></div></para>
+    <para class="flex" id="photo4"><div id="value">Table Lamp<br><span id="price">Rs.599</span><br><br><input type="submit" id="btn1" value="Buy Now"></div></para>
+    <para class="flex" id="photo5"><div id="value">LCD Monitor Screen<br><span id="price">Rs.105,999</span><br><br><input type="submit" id="btn1" value="Buy Now"></div></para>
+    <br><br><br>
+    <form action="index.html"><input type="submit" value="Log Out" id="btun" onclick="togglehide()"></form>
+    
+        <br><br>
+
+    <script>
+        console.log('hello world')
+        var a = 24
+        console.log(a)
+        var name = "Arham"
+        var work = "JavaScript"
+        var len = "shgfywrgyshfjfgsgffgsugftgeuewygeuwagygawugaytyagyuwrgaygygdydgfncgeengcycnagnjcg"
+        console.log(`${name} is studying ${work}`)
+        var len = len.length
+        console.log(len)
+        var str = "Tis is"
+        var position = str.indexOf('is');
+        console.log(position)
+        let array = [1, 2, 3, 'jello', true]
+        console.log(array)
+        //alert("Hello Arham")
+        //prompt("what is your name?", "Guest")
+        //confirm("Do you want to log out?")
+        let i = 23
+        for(i=3; i<5; i++){
+            console.log(i)
+        }
+        function togglehide(){
+        let btun = document.getElementById('btun')
+        alert("Visit Again!")
+        }
+        let box1 = document.getElementById('box1');
+        console.log(box1);
+        //box1.addEventListener('mouseover' ,function test(){
+            //alert("HEllo")
+        //})
+        let sel = document.querySelector('#box1')
+        console.log("query is", sel)
+    
+        //btun.addEventListener('mouseover', function run(){
+            //confirm("Do you want to log out?")
+        //})
+    </script>
+</body>
+</html>

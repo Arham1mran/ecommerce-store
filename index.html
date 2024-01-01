@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNexa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gantari:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gantari:wght@300&family=Nosifer&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+        background-image: url('packages.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: static;
+        overflow: hidden;
+        max-height: 900px;
+        }
+        .hello{
+            background-color: white;
+            width: 440px;
+            padding: 40px;
+            margin-left: 440px;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 40px;
+            border-style: hidden;
+            margin-bottom: 180px;
+            margin-top: 180px;
+        }
+        #username{
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 100px;
+        }
+        #email{
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 125px;
+        }
+        #password{
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 100px;
+        }
+        #box{
+            border-color: white;
+            border-radius: 5px;
+            border-style: hidden;
+            background-color: rgb(236, 234, 234);
+            width: 160px;
+            height: 20px;
+        }
+        #box:hover{
+            border-width: 10px;
+            border-color: black;
+        }
+        #btn{
+            font-family: 'Gantari', sans-serif;
+            font-weight: bolder;
+            width: 80px;
+            height: 25px;
+            font-size: 15px;
+            font-weight: lighter;
+            border-radius: 500px;
+            border-width: 1px;
+            background-color: white;
+            margin-left: 190px;
+            border-width: 2px;
+            border-color: rgb(158, 156, 156);
+            border-style: solid;
+            border-width: 0.1px;
+            border-radius: 50px;
+            
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 1s;
+            
+        }
+        #btn:hover{
+            background-color: darkgray;
+            color: whitesmoke;
+            cursor: pointer;
+            border-color: aliceblue;
+        }
+        input[type=text]{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-style: none;
+            outline: none;
+        }
+        input[type=email]{
+            outline: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+       @media (max-width: 390px){
+        .hello{
+            margin-left: 0px;
+            width: 160px;
+            
+        }
+        #username{
+            margin-left: 40px;
+        }
+        #email{
+            margin-left: 55px;
+        }
+        #password{
+            margin-left: 40px;
+        }
+        #box{
+            margin-left: 0px;
+        }
+        #btn{
+            margin-left: 44px;
+        }
+        body{
+            overflow: hidden;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="hello">
+    <div class="border">
+    <form action="Hub.html">
+    <span id="username">Username:</span> <input type="text" name="myUsername" required id="box" >
+</div>
+    <br><br>
+    <div class="border2">
+    <span id="email">Email:  </span> <input type="email" name="myEmail" required  id="box">
+</div>
+    <br><br>
+    <div class="border3">
+    <span id="password" >Password:</span> <input type="text" name="myPassword" required id="box" >
+</div>
+    <br><br>
+    <input type="submit" value="Log in" id="btn" ></form>
+    <br>
+    </div>
+</body>
+</html>
