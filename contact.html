@@ -87,7 +87,7 @@ input[type=text]{
     margin: auto;
     width: 610px;
     border: 1px solid white;
-    height: 400px;
+    height: 530px;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -121,6 +121,7 @@ input[type=text]{
     width: 600px;
     float: left;
     box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    resize: vertical;
 }
 #number{
     height: 40px;
@@ -174,6 +175,49 @@ select option {
             font-size: 16px;
             border: none;
         }
+#msg{
+    
+    height: 40px;
+    background-color: rgba(221, 216, 216, 0.74);
+    border: none;
+    border-radius: 10px;
+    width: 600px;
+    float: left;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    resize: vertical;
+    max-height: 80px;
+}
+textarea{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border: none;
+    text-align: center;
+}
+#btn{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            width: 90px;
+            height: 30px;
+            font-size: 15px;
+            font-weight: lighter;
+            border-radius: 500px;
+            border-width: 1px;
+            background-color: white;
+            border-width: 2px;
+            border-color: rgb(158, 156, 156);
+            border-style: solid;
+            border-width: 0.1px;
+            border-radius: 50px;
+            transition: all ease-in-out 1s;
+            
+        }
+        #btn:hover{
+            background-color: darkgray;
+            color: whitesmoke;
+            cursor: pointer;
+            border-color: aliceblue;
+        }
 
     </style>
 </head>
@@ -189,7 +233,7 @@ select option {
         </nav>
         </div>
         <br><br>
-        <div id="box"><br><div id="contact">Contact Us</div><br><div id="title">Enter Name:</div><div><input type="text" name="name" id="fullname" required></div><br><div id="title">Enter Email:</div><div class="sol"><div><input type="email" name="name" id="email" required></div></div><br><span id="title1">Enter Phone Number:</span><br><div class="sol"><span><input type="number" name="name" id="number" required></span></div><br><div id="title">Choose your Inquiry:</div><select id="opt" name="dropdown">
+        <div id="box"><br><div id="contact">Contact Us</div><br><div id="title">Enter Name:</div><div><input type="text" name="name" id="fullname" required></div><br><div id="title">Enter Email:</div><div class="sol"><div><input type="email" name="name" id="email" required></div></div><br><span id="title1">Enter Phone Number:</span><br><div class="sol"><span><input type="number" name="name" id="number" required></span></div><br><div id="title">Choose your Inquiry:</div><select id="opt" name="dropdown" required>
             <option value="option">Product Information</option>
             <option value="option">Order and Shipping Details</option>
             <option value="option">Payment and Pricing</option>
@@ -197,5 +241,10 @@ select option {
             <option value="option">Account and Login</option>
             <option value="option">Customer Support</option>
         </select>
+        <br><br><br>
+        <div id="title">Write A Message For Any Specific Help</div>
+        <div ><textarea type="tel" id="msg" required></textarea></div>
+        <br><br><br><br>
+        <div><input type="button" id="btn" value="Submit"></div>
 </body>
 </html>
