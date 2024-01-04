@@ -198,6 +198,12 @@ color: red;
     }
     
 }*/
+#drbates{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 </style>
 <body>
     <div class="navbar" id="box1"> 
@@ -226,6 +232,7 @@ color: red;
     <form action="index.html"><input type="submit" value="Log Out" id="btun" onclick="togglehide()"></form>
     
         <br><br>
+<footer id="drbates" class="foot"></footer>
 
     <script>
         console.log('hello world')
@@ -264,6 +271,14 @@ color: red;
         //btun.addEventListener('mouseover', function run(){
             //confirm("Do you want to log out?")
         //})
+        function displaytime(){
+            time = new Date()
+            console.log(time)
+            document.getElementById('drbates').innerHTML = time
+        
+        }
+        setInterval(displaytime ,1000);
+
     </script>
 </body>
 </html>

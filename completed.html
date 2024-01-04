@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopNexa</title>
     <style>
-    body{
+ body{
         overflow-x: hidden;
         text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -87,7 +87,7 @@ input[type=text]{
     margin: auto;
     width: 610px;
     border: 1px solid white;
-    height: 530px;
+    height: 440px;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -218,6 +218,12 @@ textarea{
             cursor: pointer;
             border-color: aliceblue;
         }
+        #comp{
+             color: green;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: x-large;
+
+        }
 
     </style>
 </head>
@@ -233,18 +239,10 @@ textarea{
         </nav>
         </div>
         <br><br>
-        <div id="box"><br><div id="contact">Contact Us</div><br><div id="title">Enter Name:</div><div><input type="text" name="name" id="fullname" required></div><br><div id="title">Enter Email:</div><div class="sol"><div><input type="email" name="name" id="email" required></div></div><br><span id="title1">Enter Phone Number:</span><br><div class="sol"><span><input type="number" name="name" id="number" required></span></div><br><div id="title">Choose your Inquiry:</div><select id="opt" name="dropdown" required>
-            <option value="option">Product Information</option>
-            <option value="option">Order and Shipping Details</option>
-            <option value="option">Payment and Pricing</option>
-            <option value="option">Returns and Refunds</option>
-            <option value="option">Account and Login</option>
-            <option value="option">Customer Support</option>
-        </select>
-        <br><br><br>
-        <div id="title">Write A Message For Any Specific Help</div>
-        <div ><textarea type="tel" id="msg" ></textarea></div>
-        <br><br><br><br>
-        <div><form action="completed.html"><input type="submit" id="btn" value="Submit" ></form></div>
+        <div id="box">
+            <br><div id="contact">Contact Us</div><br>
+    <img src="tick-removebg-preview.png" alt="Message sent" id="img">
+    <h3 id="comp">Your Message Has Been Sent</h3>
+        </div>
 </body>
 </html>
